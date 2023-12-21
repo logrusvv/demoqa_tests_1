@@ -3,11 +3,17 @@ plugins {
 }
 
 repositories {
-        mavenCentral
+        mavenCentral()
 }
 
-dependecies{
-    testImplementation()
+dependencies{
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:5.10.1"
+    )
+}
+
+test {
+    useJUnitPlatform()
 }
 
 
